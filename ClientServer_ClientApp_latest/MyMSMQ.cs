@@ -9,11 +9,14 @@ namespace ClientServer_ClientApp_latest
         // Sends an Order to a queue.
         //**************************************************
 
-        public void SendMessage()
+        public void SendMessage(string sendedVal = "")
         {
 
-            // Value to sent.
-            string sendedVal = "new good message coming.";
+            // initializing value to sent if it is empty.
+            if (sendedVal == "")
+            {
+                sendedVal = "new good message coming.";
+            }
 
             // Connect to a queue on the local computer.
             MessageQueue myQueue = new MessageQueue(".\\private$\\new");
@@ -24,9 +27,6 @@ namespace ClientServer_ClientApp_latest
             // Sending message.
             myQueue.Send(mgs);
             myQueue.DefaultPropertiesToSend.Label = "sending any text plz...";
-
-            // press any key to exit
-            Console.ReadLine();
 
             return;
         }
