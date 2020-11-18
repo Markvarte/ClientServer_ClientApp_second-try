@@ -71,7 +71,7 @@ namespace ClientServer_ClientApp_latest
                     break;
 
                     case ClientProgramType.mappedMemory: // 2
-                                                         //Atver un nolasa no servera rakstīto failu
+                    //Atver un nolasa no servera rakstīto failu
 
                         Console.WriteLine("Memory mapped failu lasītājs");
 
@@ -80,7 +80,7 @@ namespace ClientServer_ClientApp_latest
                             using (var reader = file.CreateViewAccessor(0, 34))
                             {
                                 var bytes = new byte[34];
-                                reader.ReadArray<byte>(0, bytes, 0, bytes.Length);
+                                reader.ReadArray(0, bytes, 0, bytes.Length);
 
                                 Console.WriteLine("Lasa baitus");
                                 for (var i = 0; i < bytes.Length; i++)
@@ -95,7 +95,7 @@ namespace ClientServer_ClientApp_latest
                         break;
 
                     default:
-                        Console.WriteLine("Wrong client type.");
+                        Console.WriteLine("Wrong connection type.");
                         break;
                 }
         }
