@@ -1,0 +1,7 @@
+C:\Users\Natalija\source\repos\ClientServer_ClientApp_latest\ClientServer_ClientApp_latest\bin\Debug\ClientServer_ClientApp_latest.exe.config
+C:\Users\Natalija\source\repos\ClientServer_ClientApp_latest\ClientServer_ClientApp_latest\bin\Debug\ClientServer_ClientApp_latest.exe
+C:\Users\Natalija\source\repos\ClientServer_ClientApp_latest\ClientServer_ClientApp_latest\bin\Debug\ClientServer_ClientApp_latest.pdb
+C:\Users\Natalija\source\repos\ClientServer_ClientApp_latest\ClientServer_ClientApp_latest\obj\Debug\ClientServer_ClientApp_latest.csprojAssemblyReference.cache
+C:\Users\Natalija\source\repos\ClientServer_ClientApp_latest\ClientServer_ClientApp_latest\obj\Debug\ClientServer_ClientApp_latest.csproj.CoreCompileInputs.cache
+C:\Users\Natalija\source\repos\ClientServer_ClientApp_latest\ClientServer_ClientApp_latest\obj\Debug\ClientServer_ClientApp_latest.exe
+C:\Users\Natalija\source\repos\ClientServer_ClientApp_latest\ClientServer_ClientApp_latest\obj\Debug\ClientServer_ClientApp_latest.pdb
