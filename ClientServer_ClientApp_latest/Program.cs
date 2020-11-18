@@ -50,16 +50,23 @@ namespace ClientServer_ClientApp_latest
 
                     case ClientProgramType.queue: // 1
 
-                        Console.WriteLine("MSMQ Queuen klients");
+                    // Create a new instance of the class.
+                    MyMSMQ myNewQueue = new MyMSMQ();
+                    Console.WriteLine("MSMQ Queuen klients");
+                    string msmqRequest;
 
-                        // Create a new instance of the class.
-                        MyMSMQ myNewQueue = new MyMSMQ();
-
+                    while(true)
+                    {
+                        Console.WriteLine("Ievadiet zinu vai 'quit', lai iziet: ");
+                        msmqRequest = Console.ReadLine();
                         // Send a message to a queue.
-                        myNewQueue.SendMessage();
-                        // press any key to exit
-                        Console.WriteLine("Nospiediet jebkuru taustinu, lai izietu");
-                        Console.ReadLine();
+                        myNewQueue.SendMessage(msmqRequest);
+                        if (msmqRequest == "quit")
+                        {
+                            break;
+                        }
+                    }
+                       
 
                     break;
 
